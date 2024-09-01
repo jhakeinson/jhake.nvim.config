@@ -12,3 +12,8 @@ vim.cmd([[autocmd InsertLeave * :set relativenumber]])
 vim.opt.mouse = ""
 -- vim.opt.wrap = true
 vim.opt.breakindent = true
+vim.filetype.add({
+  pattern = {
+    [".env.*"] = "dotenv",
+  },
+})
